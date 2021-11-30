@@ -1,0 +1,19 @@
+<mapper namespace="User">
+    <!--    select-->
+    <select id="findByCondition" paramterType="com.lagou.pojo.User" resultType="com.lagou.pojo.User">
+        select * from xhsdb.user where id = #{id}
+    </select>
+    <select id="findAll" resultType="com.lagou.pojo.User">
+        select * from xhsdb.user
+    </select>
+
+    <!--    update-->
+    <update id="update" paramterType="com.lagou.pojo.User" resultType="Integer">
+        update xhsdb.user set username='zhangsan' where id=#{id} and username=#{username}
+    </update>
+
+    <!--    delete-->
+    <delete id="delete" paramterType="com.lagou.pojo.User" resultType="Integer">
+        delete from xhsdb.user where id=#{id} and username=#{username}
+    </delete>
+</mapper>
