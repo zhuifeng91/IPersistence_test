@@ -19,4 +19,5 @@ public interface IUserDao {
 
     //删除操作
     public void delete(User user);*/
+
 }
