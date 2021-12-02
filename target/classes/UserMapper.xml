@@ -16,4 +16,9 @@
     <delete id="delete" paramterType="com.lagou.pojo.User" resultType="Integer">
         delete from xhsdb.user where id=#{id} and username=#{username}
     </delete>
+
+<!--    insert-->
+    <insert id="insert" paramterType="com.lagou.pojo.User" resultType="Integer">
+        insert into xhsdb.user(id,username,password,birthday) values(#{id},#{username},#{password},#{birthday})
+    </insert>
 </mapper>

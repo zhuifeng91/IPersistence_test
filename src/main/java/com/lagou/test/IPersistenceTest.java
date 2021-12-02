@@ -25,6 +25,7 @@ public class IPersistenceTest {
         user.setId(2);
         user.setUsername("tom");
 
+
        /* User user2 = sqlSession.selectOne("User.findByCondition", user);
 
         System.out.println(user2);*/
@@ -50,7 +51,7 @@ public class IPersistenceTest {
 //        sqlSession.update("User.update",user);
 
         //delete
-        sqlSession.delete("User.delete",user);
+        sqlSession.delete("User.insert",user);
 
     }
 
